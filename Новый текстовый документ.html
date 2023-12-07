@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Шифрування методом Цезаря</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Шифрування методом Цезаря</h1>
+
+    <label for="originalText">Введіть текст:</label>
+    <input type="text" id="originalText" placeholder="Текст для шифрування">
+
+    <label for="shift">Зсув (ціле число):</label>
+    <input type="number" id="shift" placeholder="Зсув" min="0" required>
+
+    <button onclick="encryptText()">Зашифрувати</button>
+    <button onclick="decryptText()">Розшифрувати</button>
+    <div>
+        <strong>Зашифрований текст:</strong>
+        <span id="encryptedText"></span>
+    </div>
+    <div>
+        <strong>Розшифрований текст:</strong>
+        <span id="decryptedText"></span>
+    </div>
+    <div>
+        <strong>Алфавіт:</strong>
+        <select name="SelectAlphabet" id="SelectAlphabet">
+            <option value="Ukraine">Український</option>
+            <option value="English">Англійський</option>
+        </select>
+        <span id="alphabet"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
